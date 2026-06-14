@@ -1,173 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Exclusão de Conta e Dados — OrquiDiário</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f8f9fa;
-      color: #212529;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(135deg, #2f9e44, #845ef7);
-      color: #fff;
-      padding: 2rem 1.5rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0 0 0.5rem;
-      font-size: 1.8rem;
-    }
-    main {
-      max-width: 900px;
-      margin: -1.5rem auto 3rem;
-      padding: 0 1.5rem;
-    }
-    .card {
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-      padding: 1.75rem 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-    h2 {
-      margin-top: 0;
-      color: #2f9e44;
-      font-size: 1.3rem;
-    }
-    h3 {
-      margin-top: 1.5rem;
-      font-size: 1.05rem;
-      color: #845ef7;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    a {
-      color: #845ef7;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.85rem;
-      color: #868e96;
-      padding: 1.5rem 1rem 2.5rem;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Excluir Conta — OrquiDiário</title>
+<meta name="description" content="Como excluir sua conta e seus dados do aplicativo OrquiDiário, dentro do app ou por solicitação. CodeGarden Studio.">
+<style>
+  :root{
+    --verde:#2E7D32; --verde2:#3A7D22; --texto:#1B2B1B; --suave:#5a6b5a;
+    --borda:#e3ebe1; --bg:#f6f9f4; --card:#ffffff; --vermelho:#C62828;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--texto);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;font-size:16px}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px 64px}
+  header{background:linear-gradient(135deg,var(--verde),var(--verde2));color:#fff;
+    padding:48px 20px 40px;text-align:center}
+  header h1{margin:14px 0 4px;font-size:26px}
+  header p{margin:0;opacity:.9;font-size:14px}
+  .logo{width:64px;height:64px;border-radius:18px;background:rgba(255,255,255,.15);
+    display:inline-flex;align-items:center;justify-content:center;font-size:34px}
+  .card{background:var(--card);border:1px solid var(--borda);border-radius:16px;
+    padding:24px 26px;margin-top:24px}
+  h2{color:var(--verde);font-size:18px;margin:0 0 10px}
+  a{color:var(--verde2)}
+  ol,ul{padding-left:22px}
+  li{margin:7px 0}
+  .step{display:flex;gap:14px;align-items:flex-start;margin:14px 0}
+  .num{flex:0 0 28px;height:28px;border-radius:50%;background:var(--verde);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+  .box{border-left:4px solid var(--verde);background:#eef5e9;border-radius:8px;
+    padding:12px 16px;margin:14px 0;font-size:14px}
+  .mail{background:#f1f5ef;border:1px solid var(--borda);border-radius:10px;
+    padding:14px 16px;font-size:14px;margin:12px 0}
+  .mail b{color:var(--verde)}
+  .danger{color:var(--vermelho);font-weight:600}
+  .meta{font-size:13px;color:var(--suave);text-align:center;margin-top:6px}
+  footer{text-align:center;color:var(--suave);font-size:13px;margin-top:40px}
+  .small{font-size:13px;color:var(--suave)}
+</style>
 </head>
 <body>
+<header>
+  <div class="logo">🌺</div>
+  <h1>Excluir sua conta</h1>
+  <p>OrquiDiário · CodeGarden Studio</p>
+</header>
 
-  <header>
-    <h1>Exclusão de Conta e Dados</h1>
-    <p>OrquiDiário · CodeGarden Studio</p>
-  </header>
+<div class="wrap">
+  <p class="meta">Última atualização: junho de 2026</p>
 
-  <main>
+  <div class="card">
+    <h2>O jeito mais rápido: pelo app</h2>
+    <p>Você pode excluir sua conta diretamente no OrquiDiário, na hora:</p>
+    <div class="step"><div class="num">1</div><div>Abra o app e vá em <strong>Perfil</strong>.</div></div>
+    <div class="step"><div class="num">2</div><div>Role até <strong>Zona de perigo</strong> e toque em <strong>“Excluir minha conta”</strong>.</div></div>
+    <div class="step"><div class="num">3</div><div>Confirme e <strong>digite sua senha</strong> — é o que evita exclusões acidentais.</div></div>
+    <div class="box">A exclusão é <strong>imediata e permanente</strong>: conta, perfil,
+    plantas, fotos, diário, lista de desejos e configurações são apagados.</div>
+  </div>
 
-    <section class="card">
-      <h2>Sobre esta página</h2>
-      <p>
-        Esta página explica como usuários do aplicativo <strong>OrquiDiário</strong> podem solicitar
-        a exclusão da conta e de todos os dados associados, conforme exigido pela Google Play.
-      </p>
-    </section>
+  <div class="card">
+    <h2>Sem acesso ao app? Solicite por e-mail</h2>
+    <p>Se você não consegue abrir o app, peça a exclusão por e-mail:</p>
+    <div class="mail">
+      <div><b>Para:</b> codegardenstudio@gmail.com</div>
+      <div><b>Assunto:</b> Exclusão de Conta — OrquiDiário</div>
+      <div><b>No corpo:</b> confirme o e-mail cadastrado e que deseja excluir a conta.</div>
+    </div>
+    <p>Processamos a solicitação em até <strong>7 dias úteis</strong> e confirmamos a
+    conclusão pelo mesmo e-mail.</p>
+  </div>
 
-    <section class="card">
-      <h2>1. Quais dados são armazenados</h2>
-      <p>O OrquiDiário armazena os seguintes dados de conta:</p>
-      <ul>
-        <li>E-mail (obrigatório)</li>
-        <li>Senha (criptografada)</li>
-        <li>Nome (opcional)</li>
-        <li>Foto de perfil (opcional)</li>
-      </ul>
+  <div class="card">
+    <h2>O que é apagado</h2>
+    <ul>
+      <li>Conta e credenciais de acesso;</li>
+      <li>Nome e foto de perfil;</li>
+      <li>Todas as plantas cadastradas e suas fotos;</li>
+      <li>Registros do diário, replantes e histórico;</li>
+      <li>Lista de desejos e configurações.</li>
+    </ul>
+    <p class="danger">Essa ação não pode ser desfeita.</p>
+    <p class="small">Após a conclusão, o OrquiDiário não retém seus dados. Eventuais
+    cópias em backups técnicos são sobrescritas no ciclo normal de rotação.</p>
+  </div>
 
-      <p>Além disso, o app armazena dados de uso, como:</p>
-      <ul>
-        <li>Plantas cadastradas</li>
-        <li>Fotos das plantas</li>
-        <li>Anotações e registros de cultivo</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>2. Como solicitar a exclusão da conta</h2>
-      <p>
-        Para excluir sua conta e todos os dados associados, envie um e-mail para:
-      </p>
-      <p>
-        <strong>
-          <a href="mailto:codegardenstudio@gmail.com">codegardenstudio@gmail.com</a>
-        </strong>
-      </p>
-
-      <h3>Inclua as seguintes informações:</h3>
-      <ul>
-        <li>Assunto: <strong>Exclusão de Conta — OrquiDiário</strong></li>
-        <li>O e-mail utilizado na conta</li>
-        <li>Confirmação de que deseja excluir permanentemente sua conta</li>
-      </ul>
-
-      <p>
-        Após a solicitação, a exclusão será concluída em até
-        <strong>7 dias úteis</strong>.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>3. O que é excluído</h2>
-      <p>Ao excluir sua conta, os seguintes dados são removidos permanentemente:</p>
-      <ul>
-        <li>Conta (e-mail e senha)</li>
-        <li>Nome e foto de perfil</li>
-        <li>Plantas cadastradas</li>
-        <li>Fotos das plantas</li>
-        <li>Anotações e registros</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>4. O que pode ser mantido</h2>
-      <p>
-        O OrquiDiário não mantém dados após a exclusão da conta.  
-        Nenhuma informação é enviada para servidores externos ou terceiros.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>5. Exclusão local pelo usuário</h2>
-      <p>
-        Você também pode excluir seus dados diretamente no dispositivo:
-      </p>
-      <ul>
-        <li>Excluir plantas e fotos manualmente dentro do app</li>
-        <li>Desinstalar o aplicativo (remove todos os dados locais)</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>6. Contato</h2>
-      <p>
-        Para dúvidas sobre exclusão de dados ou privacidade:
-      </p>
-      <p>
-        <strong>E-mail:</strong>
-        <a href="mailto:codegardenstudio@gmail.com">codegardenstudio@gmail.com</a>
-      </p>
-    </section>
-
-  </main>
+  <div class="card">
+    <h2>Prefere manter a conta?</h2>
+    <p>Você também pode, dentro do app, excluir plantas e fotos individualmente, ou
+    apenas sair da conta sem apagá-la. Para detalhes sobre tratamento de dados, veja a
+    <a href="index.html">Política de Privacidade</a>.</p>
+  </div>
 
   <footer>
-    OrquiDiário · CodeGarden Studio · Todos os direitos reservados.
+    © 2026 CodeGarden Studio · OrquiDiário 🌿<br>
+    Contato: <a href="mailto:codegardenstudio@gmail.com">codegardenstudio@gmail.com</a>
   </footer>
-
+</div>
 </body>
 </html>
